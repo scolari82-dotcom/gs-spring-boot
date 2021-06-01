@@ -6,6 +6,9 @@
 trigger:
 - master
 
+pool:
+   name: Default
+
 variables:
 
   # Azure Resource Manager connection created during pipeline creation
@@ -15,8 +18,6 @@ variables:
   webAppName: 'java-spring-boot'
 
   # Agent VM image name
-pool:
-    name: Default
 
 stages:
 - stage: Build
